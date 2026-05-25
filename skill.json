@@ -1,0 +1,8 @@
+{
+  "skill_name": "product_analyzer",
+  "version": "1.0",
+  "description": "接收一张商品图片，提取属性（品类、颜色、材质、风格）并生成三句营销文案",
+  "input_modalities": ["image"],
+  "output_modalities": ["text"],
+  "prompt_template": "你是一个电商运营专家。分析这张商品图片，严格按照以下JSON格式输出，不要输出任何额外解释或前缀：\n{\n  \"category\": \"品类名称\",\n  \"color\": \"颜色\",\n  \"material\": \"材质\",\n  \"style\": \"风格\"\n}\n然后基于这些属性生成3句不同角度的种草文案，每句20字以内，直接输出文案，不要编号。"
+}
